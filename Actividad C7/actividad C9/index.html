@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="cargando" class="cargando">
+        <div class="circulo"></div>
+    </div>
+
+    <div class="grid">
+
+        <header class="header">
+            <a href="#" >
+                <img src="img/h-removebg-preview.png" class="logo">
+            </a>
+            <nav class="nav">
+            <a href="#">Inicio</a>
+            <a href="#">Servicios</a>
+            <a href="#">Foro</a>
+            <a href="#">Contacto</a>
+            </nav>
+        
+        </header>
+
+        <aside>
+            <h2>Menu</h2>
+            <ul class="lista">
+                <li><a href="#">Novedades</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Accesorios</a></li>
+            </ul>
+        </aside>
+
+        <main class="contenedor">
+
+            <section class="hero">
+                
+            <h1 class="hero-titulo">Bienvenidos a Sanrio World</h1>
+            <p class="hero-texto">Descubre los accesorios mas lindos y las últimas novedades.</p>
+                <audio controls autoplay class="hero-audio">
+                    <source src="audio/Lofi_Musicstudy_sleep_relax_homework_work.mp3" type="audio/mpeg">
+                    <source src="audio/Yachin_ga_Hanbun.mp3" type="audio/ogg">
+                    Este navegador no soporta el elemento de audio.
+                </audio>
+                
+                <video controls autoplay muted loop poster="img/miniatura.jpg" class="hero-video">
+                    <source src="video/video.mp4" type="video/mp4">
+                    <source src="video.webm" type="video/webm">
+                    Tu navegador no soporta el elemento de vídeo.
+                </video>
+                
+            </section>
+
+            <h1>Nuestros Productos</h1>
+            <section class="productos">
+            
+                <article class="tarjeta">
+                    <img src="" alt="espacio para imagen del cada producto" class="imagen-producto">
+                    <h3>Producto 1</h3>
+                    <p>Descripcion corta del producto.</p>
+                    <span class="precio">19,99 €</span>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="" alt="espacio para imagen del cada producto" class="imagen-producto">
+                    <h3>Producto 2</h3>
+                    <p>Descripcion corta del producto.</p>
+                    <span class="precio">24,50 €</span>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="" alt="espacio para imagen del cada producto" class="imagen-producto">
+                    <h3>Producto 3</h3>
+                    <p>Descripcion corta del producto.</p>
+                    <span class="precio">15,00 €</span>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="" alt="espacio para imagen del cada producto" class="imagen-producto">
+                    <h3>Producto 4</h3>
+                    <p>Descripcion corta del producto.</p>
+                    <span class="precio">32,00 €</span>
+                </article>
+
+
+                
+            </section>
+        </main>
+
+        <footer >
+        <p>Sanrio World</p>
+        <div class="redes">
+            <a href="#" ><img src="img/ins.png" alt="Instagram"></a>
+            <a href="#" ><img src="img/tik.webp" alt="TikTok"></a>
+            <a href="#" ><img src="img/twiter.webp" alt="Twitter"></a>
+        </div>
+        </footer>
+
+    </div>
+
+    <script>
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const c = document.getElementById('cargando');
+                c.style.opacity = '0';
+                setTimeout(() => {c.style.display = 'none'}, 500);
+            }, 1000); 
+        });
+    </script>
+
+</body>
+</html>
